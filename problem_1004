@@ -1,0 +1,17 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner ler = new Scanner (System.in);
+        int a, b, PROD=0;
+        a = ler.nextInt();
+        b = ler.nextInt();
+        PROD = a * b;
+        
+        System.out.println("PROD = "+PROD);
+ 
+    }
+ 
+}
