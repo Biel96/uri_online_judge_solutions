@@ -1,0 +1,20 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner read = new Scanner(System.in);
+        
+        int A, B, C, D, DIFERENCA;
+        A = read.nextInt();
+        B = read.nextInt();
+        C = read.nextInt();
+        D = read.nextInt();
+        DIFERENCA = (A*B-C*D);
+        
+        System.out.println("DIFERENCA = "+DIFERENCA);
+    }
+ 
+}
