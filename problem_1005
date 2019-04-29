@@ -1,0 +1,23 @@
+import java.io.IOException;
+ 
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner read = new Scanner (System.in);
+        DecimalFormat df = new DecimalFormat();
+        df.applyPattern("#.0");
+        
+        double A, B, MEDIA;
+        A = read.nextDouble();
+        B = read.nextDouble();
+        MEDIA = (A*3.5 + B*7.5)/11;
+        
+        System.out.printf("MEDIA = %.5f%n", MEDIA);
+ 
+    }
+ 
+}
