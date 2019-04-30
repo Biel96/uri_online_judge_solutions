@@ -1,0 +1,22 @@
+import java.io.IOException;
+import java.util.Scanner;
+import java.text.DecimalFormat;
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner read = new Scanner(System.in);
+        DecimalFormat df = new DecimalFormat();
+        df.applyPattern("###########.###");
+       
+        
+        int X = read.nextInt();
+        double Y= read.nextDouble(), consumo;
+        
+        consumo = X/Y;
+        
+        System.out.println(df.format(consumo)+" km/l");
+        
+    }
+ 
+}
