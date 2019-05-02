@@ -1,0 +1,30 @@
+import java.io.IOException;
+ 
+import java.util.Scanner;
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner read=new Scanner(System.in);
+        
+        double a, b, c, triangulo, circulo, trapezio, quadradoB, retanguloAB, pi=3.14159;
+        a = read.nextDouble();
+        b = read.nextDouble();
+        c = read.nextDouble();
+        
+        triangulo = a*c/2;
+        circulo = pi*c*c;
+        trapezio = ((a+b)/2)*c;
+        quadradoB = b*b;
+        retanguloAB = a*b;
+        
+        System.out.printf("TRIANGULO: %.3f%n", triangulo);
+        System.out.printf("CIRCULO: %.3f%n", circulo);
+        System.out.printf("TRAPEZIO: %.3f%n", trapezio);
+        System.out.printf("QUADRADO: %.3f%n", quadradoB);
+        System.out.printf("RETANGULO: %.3f%n", retanguloAB);
+        
+        read.close();
+    }
+ 
+}
