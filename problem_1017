@@ -1,0 +1,21 @@
+import java.io.IOException;
+ 
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner read = new Scanner(System.in);
+        
+        double timeExpended = read.nextInt();
+        double speedAverage = read.nextInt();
+        
+        double fuel = (timeExpended*speedAverage)/12;
+        
+        System.out.printf("%.3f%n", fuel);
+        
+        read.close();
+     }
+ 
+}
