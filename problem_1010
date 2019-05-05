@@ -1,0 +1,24 @@
+import java.io.IOException;
+ 
+import java.util.Scanner;
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner read = new Scanner(System.in);
+        
+        int code1 = read.nextInt();
+        int quantity1 = read.nextInt();
+        double value1 = read.nextDouble();
+        
+        int code2 = read.nextInt();
+        int quantity2 = read.nextInt();
+        double value2 = read.nextDouble();
+        
+        double total = (quantity1*value1)+(quantity2*value2);
+        
+        System.out.printf("VALOR A PAGAR: R$ %.2f%n", total);
+        
+        read.close();
+    }
+}
