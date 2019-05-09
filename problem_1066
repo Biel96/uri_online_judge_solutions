@@ -1,0 +1,35 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner read = new Scanner(System.in);
+        
+        int par=0;
+        int impar=0;
+        int positive = 0;
+        int negative = 0;
+        
+        for(int i=1; i<6; i++){
+            int n = read.nextInt();
+            if(n%2==0){
+                par+=1;
+            }
+            if(n%2 !=0){
+                impar+=1;
+            }
+            if(n>0){
+                positive+=1;
+            }
+            if(n<0){
+                negative+=1;
+            }
+        }
+            System.out.println(par+" valor(es) par(es)");
+            System.out.println(impar+" valor(es) impar(es)");
+            System.out.println(positive+" valor(es) positivo(s)");
+            System.out.println(negative+" valor(es) negativo(s)");
+     }
+ 
+}
