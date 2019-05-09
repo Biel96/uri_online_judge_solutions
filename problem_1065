@@ -1,0 +1,23 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner read = new Scanner (System.in);
+        
+        int[]vect=new int[5];
+        int sum=0;
+        
+        for(int i=0; i<5 ;i++){
+            vect[i] = read.nextInt();
+            int n = vect[i];
+            if(n%2==0){
+                sum+=1;
+            }
+        }
+        System.out.println(sum+" valores pares");
+ 
+    }
+ 
+}
