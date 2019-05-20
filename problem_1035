@@ -1,0 +1,23 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner read = new Scanner (System.in);
+       
+        int a, b, c, d, sum1, sum2;
+        a = read.nextInt();
+        b = read.nextInt();
+        c = read.nextInt();
+        d = read.nextInt();
+       
+        sum1 = c+d;
+        sum2 = a+b;
+        
+        if(b>c && d>a && c>0 && d>0 && sum1>sum2 && a%2 ==0){
+            System.out.println("Valores aceitos");
+        }else{
+            System.out.println("Valores nao aceitos");
+        }
+    }
+}
