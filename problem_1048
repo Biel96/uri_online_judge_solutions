@@ -1,0 +1,52 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner read = new Scanner(System.in);
+        
+        double salary = read.nextDouble();
+
+        if(salary<=400.00){
+            double newSalary = salary *1.15;
+            double gained = 0.15*salary;
+            int percentage = 15;
+            System.out.printf("Novo salario: %.2f%n", newSalary);
+            System.out.printf("Reajuste ganho: %.2f%n", gained);
+            System.out.println("Em percentual: "+percentage+" %");
+        }
+        if(salary>400.00 && salary<=800.00){
+            double newSalary = salary *1.12;
+            double gained = 0.12*salary;
+            int percentage = 12;
+            System.out.printf("Novo salario: %.2f%n", newSalary);
+            System.out.printf("Reajuste ganho: %.2f%n", gained);
+            System.out.println("Em percentual: "+percentage+" %");
+        }
+        if(salary>800.00 && salary<=1200.00){
+            double newSalary = salary *1.10;
+            double gained = 0.10*salary;
+            int percentage = 10;
+            System.out.printf("Novo salario: %.2f%n", newSalary);
+            System.out.printf("Reajuste ganho: %.2f%n", gained);
+            System.out.println("Em percentual: "+percentage+" %");
+        }
+        if(salary>1200.00 && salary<=2000.00){
+            double newSalary = salary *1.07;
+            double gained = 0.07*salary;
+            int percentage = 7;
+            System.out.printf("Novo salario: %.2f%n", newSalary);
+            System.out.printf("Reajuste ganho: %.2f%n", gained);
+            System.out.println("Em percentual: "+percentage+" %");
+        }
+        if(salary>2000.00){
+            double newSalary = salary *1.04;
+            double gained = 0.04*salary;
+            int percentage = 4;
+            System.out.printf("Novo salario: %.2f%n", newSalary);
+            System.out.printf("Reajuste ganho: %.2f%n", gained);
+            System.out.println("Em percentual: "+percentage+" %");
+        }
+    }
+}
