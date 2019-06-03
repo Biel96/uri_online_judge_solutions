@@ -1,0 +1,26 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner read = new Scanner (System.in);
+        
+        double media, n;
+        double k=0;
+        int x = 0;
+        
+        do{
+            n = read.nextDouble();
+            if(n>=0 && n<=10){
+                k+=n;
+                x+=1;
+            }else{
+                System.out.printf("nota invalida\n");
+            }
+            media = k/2;
+        }while(x<2);
+        
+        System.out.printf("media = %.2f%n",media);
+    }
+}
